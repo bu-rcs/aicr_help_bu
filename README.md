@@ -3,6 +3,9 @@ Intro to using AICR for BU researchers
 
 
 ## Setup SSH Access
+
+Note more info is here:  https://docs.aicr.ai/connecting/ssh/
+
 - Open an SCC OnDemand Desktop: [https://scc-ondemand.bu.edu](https://scc-ondemand.bu.edu)
 - When the Desktop is ready, open it and type `firefox` into the terminal.
 - When Firefox opens in the remote desktop, use it to login to [https://ood.aicr.ai](https://ood.aicr.ai)
