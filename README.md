@@ -24,11 +24,12 @@ Intro to using AICR for BU researchers
         eval $(ssh-agent -s)
         # Add this key to your .ssh directory
         ssh-add id_ed25519_aicr
-        keychain ~/.ssh/id_ed25519_aicr-cert.pub
+        # Move files
+        mv id_ed25519_aicr* ~/.ssh
         cd ~
         # Test login. Your USERNAME is your BU username plus "_bu",
         # i.e. username --> username_bu
-        ssh -i .ssh/id_ed25519_aicr USERNAME@login.aicr.ai
+        ssh -i ~/.ssh/id_ed25519_aicr USERNAME@login.aicr.ai
         # Enter passphrase if prompted.
         # If that worked, type "exit" to log out and you can
         # remove this directory.
@@ -38,6 +39,6 @@ Intro to using AICR for BU researchers
 
 ## Login From the SCC
 - From a terminal (via OnDemand, or an Ondemand Desktop, etc):
-    - `ssh -i .ssh/id_ed25519_aicr USERNAME@login.aicr.ai`
+    - `ssh -i ~/.ssh/id_ed25519_aicr USERNAME@login.aicr.ai`
     - enter new passphrase when prompted
 
