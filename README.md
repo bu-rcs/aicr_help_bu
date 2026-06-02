@@ -18,15 +18,25 @@ Intro to using AICR for BU researchers
         # print the .passphrase file
         cat .passphrase
         # highlight, choose the menu option Edit->Copy to copy this.
-        
+        # Change the passphrase, remember the new one! Paste in the old
+        # one with Edit->Paste when prompted.
+        ssh-keygen -p -f ~/.ssh/id_ed25519_aicr
+        # Add this key to your .ssh directory
+        ssh-add id_ed25519_aicr
+        keychain ~/.ssh/id_ed25519_aicr-cert.pub
+        cd ~
+        # Test login. Your USERNAME is your BU username plus "_bu",
+        # i.e. username --> username_bu
+        ssh -i .ssh/id_ed25519_aicr USERNAME@login.aicr.ai
+        # Enter passphrase if prompted.
+        # If that worked, type "exit" to log out and you can
+        # remove this directory.
+        cd ~
+        rm -rf aicr
         ```
-    - copy passphrase
-    - follow steps to change passphrase (you'll enter the old passphrase here)
-    - note new passphrase
-    - move keys to trusted directory: mv id_ed25519_aicr id_ed25519_aicr.pub id_ed25519_aicr-cert.pub ~/.ssh/
-    - delete old .passphrase file
 
-
-- login
-    - ssh -l USERNAME -i ~/.ssh/id_ed25519_aicr login.aicr.ai
+## Login From the SCC
+- From a terminal (via OnDemand, or an Ondemand Desktop, etc):
+    - `ssh -i .ssh/id_ed25519_aicr USERNAME@login.aicr.ai`
     - enter new passphrase when prompted
+
