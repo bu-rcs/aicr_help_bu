@@ -21,6 +21,7 @@ Intro to using AICR for BU researchers
         # Change the passphrase, remember the new one! Paste in the old
         # one with Edit->Paste when prompted.
         ssh-keygen -p -f ~/.ssh/id_ed25519_aicr
+        eval $(ssh-agent -s)
         # Add this key to your .ssh directory
         ssh-add id_ed25519_aicr
         keychain ~/.ssh/id_ed25519_aicr-cert.pub
