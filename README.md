@@ -1,6 +1,11 @@
 # aicr_help_bu
 Intro to using AICR for BU researchers
 
+## Requesting an AICR project or account
+If you are a PI, you can request a project on AICR by filling out [this form](https://docs.google.com/forms/d/e/1FAIpQLScxf5FwePLYZFV85dCihM0YFIpZM1jtpTTDyM4smscjCK4qBg/viewform).
+
+All users (including the PI if they want to use AICR themselves) will need to request an account on AICR by filling out [this form](https://docs.google.com/forms/d/e/1FAIpQLSd5wtgx6PclwKRHdBnpK5J_HoXSAcamy_o0s1lGP5vQFwXB4A/viewform).
+
 
 ## Setup SSH Access
 
